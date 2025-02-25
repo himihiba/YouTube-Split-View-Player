@@ -1,70 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic YouTube Playlist</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .controls {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            z-index: 1000;
-        }
-
-        .controls input {
-            padding: 8px;
-            font-size: 16px;
-            margin-right: 10px;
-            width: 300px;
-        }
-
-        .controls button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="video-container">
-        <iframe 
-            id="youtube-video"
-            src="https://www.youtube.com/embed/default"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    <div class="controls">
-        <input type="text" id="video-url" placeholder="Paste YouTube URL or Playlist here">
-        <button id="load-video">Load Video/Playlist</button>
-        <button id="open-video">Open in Popup</button>
-    </div>
-
-    <script>
-        const loadVideoButton = document.getElementById('load-video');
+const loadVideoButton = document.getElementById('load-video');
         const openVideoButton = document.getElementById('open-video');
         const videoInput = document.getElementById('video-url');
         const iframe = document.getElementById('youtube-video');
@@ -119,6 +53,3 @@
             
             window.open(popupUrl, "_blank", options);
         });
-    </script>
-</body>
-</html>

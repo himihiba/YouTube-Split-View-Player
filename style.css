@@ -1,0 +1,40 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.controls {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1000;
+}
+
+.controls input {
+	padding: 8px;
+	font-size: 16px;
+	margin-right: 10px;
+	width: 300px;
+}
+
+.controls button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}

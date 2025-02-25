@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic YouTube Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <iframe 
+            id="youtube-video"
+            src="https://www.youtube.com/embed/default"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="controls">
+        <input type="text" id="video-url" placeholder="Paste YouTube URL or Playlist here">
+        <button id="load-video">Load Video/Playlist</button>
+        <button id="open-video">Open in Popup</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
