@@ -11,3 +11,4 @@ This project allows for a more efficient split-screen experience by enabling a p
 
 It might not have the most polished UI, but it does exactly what I need—and that’s what matters most.
 🔹 **Feel free to use or improve it!**  
+[demo](https://himihiba.github.io/YouTube-Split-View-Player/)
